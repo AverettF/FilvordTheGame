@@ -22,5 +22,8 @@ namespace FilvordTheGame
             } while (!(key.Key == ConsoleKey.Enter && i == 3));
 
         }
+
+       
+
     }
 }
