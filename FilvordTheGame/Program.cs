@@ -16,14 +16,41 @@ namespace FilvordTheGame
                 i = Menu.GetSelectMenu(key, i);
                 Console.Clear();
 
-                //if (key.Key == ConsoleKey.Enter)
-                //    //SelectMenu(i);
+                if (key.Key == ConsoleKey.Enter)
+                    SelectMenu(i);
 
             } while (!(key.Key == ConsoleKey.Enter && i == 3));
 
         }
 
-       
+        static void SelectMenu(int i)
+        {
+            switch (i)
+            {
+                case (0):
+                    NewGame();
+                    Console.ReadKey();
+                    break;
+                case (1):
+                    Console.WriteLine("Здесь будет:Продолжить");
+                    Console.ReadKey();
+                    break;
+                case (2):
+                    Console.WriteLine("Здесь будет:таблица рекордов");
+                    Console.ReadKey();
+                    break;
+                case (3):
+                    Console.WriteLine("пока-пока");
+                    Console.ReadKey();
+                    break;
+            }
+        }
+
+        static void NewGame()
+        {
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+        }
 
     }
 }
