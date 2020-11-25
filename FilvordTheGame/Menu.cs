@@ -15,7 +15,7 @@ namespace FilvordTheGame
 
             if (MenuSelect == 1)
                 Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\tContinue \n");
+            Console.WriteLine("\tContinue\n");
             Console.ResetColor();
 
             if (MenuSelect == 2)
