@@ -6,5 +6,6 @@ namespace FilvordTheGame
 {
     class Menu
     {
+
     }
 }
